@@ -1,0 +1,84 @@
+<html
+  key="1"
+  lang="en"
+>
+  <head>
+    <meta charSet="utf-8" />
+    <title>
+      Интернет-магазин
+    </title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Ubuntu:400,700&subset=latin,cyrillic-ext"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="css/bootstrap.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="css/main.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
+  <body>
+    <div className="container">
+      <h2>
+        Интернет-магазин
+      </h2>
+      <br />
+      <ul className="nav nav-pills">
+        <li className="active">
+          <a href="/catalog">
+            Каталог
+          </a>
+        </li>
+        <li>
+          <a
+            href="cart.html"
+            rel="nofollow"
+          >
+            Корзина
+            <span
+              className="badge"
+              id="total-cart-count"
+            />
+          </a>
+        </li>
+      </ul>
+      <br />
+      <ul
+        className="list-unstyled"
+        id="goods"
+      >
+        <img
+          alt=""
+          rel="nofollow"
+          src="img/loading.gif"
+        />
+      </ul>
+    </div>
+    <script
+      src="js/vendor/jquery.min.js"
+      type="text/javascript"
+    />
+    <script
+      src="js/vendor/underscore.min.js"
+      type="text/javascript"
+    />
+    <script
+      src="js/modules/catalog.js"
+      type="text/javascript"
+    />
+    <script
+      src="js/modules/cart.js"
+      type="text/javascript"
+    />
+    <script
+      src="js/modules/main.js"
+      type="text/javascript"
+    />
+  </body>
+</html>

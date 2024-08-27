@@ -1,0 +1,74 @@
+[
+    {
+        "id": "1",
+        "name": "Кольцо AUTORE",
+        "price": "13500",
+        "img": "imgshop/goods/col1.jpg"
+    },
+    {
+        "id": "2",
+        "name": "Серьги TASAKI",
+        "price": "19300",
+        "img": "imgshop/ser1.jpg"
+    },
+    {
+        "id": "3",
+        "name": "Брошь MIZUKI",
+        "price": "21700",
+        "img": "imgshop/goods/br1.jpg"
+    },
+    {
+        "id": "4",
+        "name": "Кольцо ANNOUSHKA",
+        "price": "16800",
+        "img": "imgshop/goods/col2.jpg"
+    },
+    {
+        "id": "5",
+        "name": "Серьги MIZUKI",
+        "price": "23400",
+        "img": "imgshop/goods/ser2.jpg"
+    },
+    {
+        "id": "6",
+        "name": "Брошь AUTORE",
+        "price": "19600",
+        "img": "imgshop/goods/br2.jpg"
+    },
+    {
+        "id": "7",
+        "name": "Кольцо TASAKI",
+        "price": "18700",
+        "img": "imgshop/goods/col3.jpg"
+    },
+    {
+        "id": "8",
+        "name": "Серьги AUTORE",
+        "price": "27100",
+        "img": "imgshop/goods/ser3.jpg"
+    },
+    {
+        "id": "9",
+        "name": "Брошь TASAKI",
+        "price": "17900",
+        "img": "imgshop/goods/br3.jpg"
+    },
+    {
+        "id": "10",
+        "name": "Кольцо MIZUKI",
+        "price": "21500",
+        "img": "imgshop/goods/col4.jpg"
+    },
+    {
+        "id": "11",
+        "name": "Серьги ANNOUSHKA",
+        "price": "24200",
+        "img": "imgshop/goods/ser3.jpg"
+    },
+    {
+        "id": "12",
+        "name": "Брошь TASAKI",
+        "price": "17900",
+        "img": "imgshop/goods/br3.jpg"
+    }
+]
