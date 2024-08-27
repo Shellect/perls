@@ -40,7 +40,9 @@ Route::get('/inshop', function () {
     return Inertia::render('Inshop');
 })->middleware(['auth', 'verified'])->name('inshop');
 
-
+Route::get('/catalog', function() {
+    return Inertia::render('Shop/Catalog');
+})->middleware(['auth', 'verified'])->name('catalog');
 
 
 

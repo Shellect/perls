@@ -1,30 +1,30 @@
 .cont {
-   width: max-content;
-  height: max-content;
+    width: max-content;
+    height: max-content;
 }
 
 .logo {
-    
+
     width: 190px;
     height: 110px;
-   margin-top: 20px;
-   margin-left: -50px;
+    margin-top: 20px;
+    margin-left: -50px;
     background-image: url(logo5.jpg);
     background-size: cover;
     border: 2px solid rgb(21, 11, 75);
     border-radius: 15px;
-   
+
 }
 
 .titl {
-    
+
     padding-top: 20px;
     padding-left: 30px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 16px;
 }
 
-.min-h-screen  {
+.min-h-screen {
     margin-left: 20px;
     background-color: rgb(195, 187, 196);
 }
@@ -44,7 +44,7 @@
 .bg-white {
     background-color: rgb(35, 24, 115);
     color: rgb(195, 187, 196);
-    
+
 }
 
 .topconteiner {
@@ -53,50 +53,30 @@
     justify-content: center;
 }
 
-.top1, .top2,.top3,.top4,.top5 {
+.top {
     width: 120px;
     height: 110px;
-    
     margin-right: 30px;
     margin-top: 25px;
     border: 2px solid rgb(35, 24, 115);
     border-radius: 20px;
-
-}
-.top1 {
-    background-image: url(himg7.jpg);
-    background-size: contain;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
 }
 
-.top2 {
-    background-image: url(himg2.jpg);
-    background-size: contain;
-
-}
-.top3 {
-    background-image: url(himg3.jpg);
-    background-size: contain;
-
+.top img {
+    width: 120px;
+    height: 110px;
 }
 
-.top4 {
-    background-image: url(himg4.jpg);
-    background-size: contain;
-
-}
-
-.top5 {
-    background-image: url(himg5.jpg);
-    background-size: contain;
-
-}
 
 .font-medium {
     color: width(211, 27, 153);
-    
+
 }
+
 :hover.font-medium {
     color: rgb(244, 241, 241)
-    
 }

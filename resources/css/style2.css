@@ -1,15 +1,13 @@
-
 .py-12 {
     background-color: #b27abe(138, 117, 158);
 }
 
-.font-semibold  {
+.font-semibold {
     background-color: rgb(172, 183, 179);
 
 }
 
 .title {
-
     font-size: 48px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: center;
@@ -18,51 +16,66 @@
 
 
 
-@keyframes clr 
-{
-  0%   {background-image: url('img/imgcon1.jpg');}
-  20%   {background-image: url('img/imgcon4.jpg');}
-  40%   {background-image: url('img/imgcon2.jpg');}
-  60%   {background-image: url('img/imgcon3.jpg');}
-  80% {background-image: url('img/imgcon5.jpg') ;}
-  100% {background-image: url('img/imgcon9.jpg') ;}
-  
+@keyframes clr {
+    0% {
+        background-image: url('/images/imgcon1.jpg');
+    }
+
+    20% {
+        background-image: url('/images/imgcon4.jpg');
+    }
+
+    40% {
+        background-image: url('/images/imgcon2.jpg');
+    }
+
+    60% {
+        background-image: url('/images/imgcon3.jpg');
+    }
+
+    80% {
+        background-image: url('/images/imgcon5.jpg');
+    }
+
+    100% {
+        background-image: url('/images/imgcon9.jpg');
+    }
+
 }
 
-.imgcon1, .imgcon4, .imgcon2, .imgcon3,.imgcon5, .imgcon9 {
-   background-size: contain;
-   width: 100px;
+.imgcon1,
+.imgcon4,
+.imgcon2,
+.imgcon3,
+.imgcon5,
+.imgcon9 {
+    background-size: contain;
+    width: 100px;
 }
 
 
 .conteiner {
     margin-top: 10px;
-    width: 1200px;;
-    height:500px;
+    width: 1200px;
+    height: 500px;
     display: grid;
     gap: 10px;
     /*grid-template-areas:
     "n c c c "
     "n c c c "
     "f f f f ";*/
-    
+
 }
 
-.con{
-    
+.con {
     margin-left: -170px;
     grid-area: c;
     grid-column-start: 2;
     grid-column-end: 6;
     grid-row-start: 1;
     grid-row-end: 5;
-    
     animation: clr 50s infinite;
-    
-  }
-
-
-
+}
 
 .nav {
     padding-left: 10px;
@@ -73,14 +86,14 @@
     grid-column-end: 1;
     grid-row-start: 1;
     grid-row-end: 5;
-    
+
     background-color: rgb(167, 136, 171);
     background: linear-gradient(rgb(209, 184, 211), rgb(123, 81, 129));
     font-size: 20px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: left;
     color: rgb(39, 12, 118);
-    
+
 
 }
 
@@ -93,14 +106,14 @@
     background-color: rgb(167, 136, 171);
     background: linear-gradient(rgb(209, 184, 211), rgb(123, 81, 129));
     text-align: center;
-    
+
 }
 
 .h2 {
-   font-size: 18px;
-   font-family: 'Times New Roman', Times, serif;
-   width: 550px;
-   text-align: justify;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    width: 550px;
+    text-align: justify;
 }
 
 .h4 {
@@ -108,8 +121,8 @@
     font-family: 'Times New Roman', Times, serif;
     color: rgb(35, 24, 115);
     text-align: center;
-    
- }
+
+}
 
 .h1 {
     font-size: 20px;
@@ -123,7 +136,7 @@
     font-size: 58px;
     font-family: 'Times New Roman', Times, serif;
     color: rgb(35, 24, 115);
-}   
+}
 
 .vit {
     width: 1700px;
@@ -132,14 +145,14 @@
 }
 
 .imgs {
-    
+
     width: 450px;
     background-size: contain;
 }
 
-.navshop  {
+.navshop {
     width: 1350px;
-   
+
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 30px;
     color: rgb(35, 24, 115);
@@ -150,4 +163,3 @@
 .containers {
     margin-left: 20px;
 }
-

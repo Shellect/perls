@@ -1,79 +1,18 @@
-<html
-  key="1"
-  lang="en"
->
-  <head>
-    <meta charSet="utf-8" />
-    <title>
-      Интернет-магазин. Каталог.
-    </title>
-    <meta
-      content="Интернет-магазин. Каталог с фильтрами и сортировками"
-      name="description"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Ubuntu:400,700&subset=latin,cyrillic-ext"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <link
-      href="css/bootstrap.min.css"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <link
-      href="components/jquery-ui/jquery-ui.min.css"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <link
-      href="css/main.css"
-      rel="stylesheet"
-      type="text/css"
-    />
-  </head>
-  <body data-page="catalogDB">
+import React from "react";
+import { Link } from '@inertiajs/react';
+
+export default function () {
+  return (
     <div className="container">
-      <br />
-      <br />
+
       <ul className="nav nav-pills">
-        <li>
-          <a href="/catalog">
-            Каталог
-          </a>
-        </li>
-        <li className="active">
-          <a href="catalog.html">
-            Каталог с фильтрами
-          </a>
-        </li>
-        <li>
-          <a href="catalog-pag.html">
-            Каталог с пагинацией
-          </a>
-        </li>
-        <li id="compare-tab">
-          <a href="compare.html">
-            Сравнение товаров
-            <span className="badge" />
-          </a>
-        </li>
-        <li>
-          <a href="cart.html">
-            Корзина
-            <span
-              className="badge"
-              id="total-cart-count"
-            />
-          </a>
-        </li>
-        <li>
-          <a href="order.html">
-            Оформление заказа
-          </a>
-        </li>
+        <li><Link href="/catalog"> Каталог </Link> </li>
+        <li className="active"> <Link href="catalog.html"> Каталог с фильтрами </Link> </li>
+        <li> <Link href="catalog-pag.html"> Каталог с пагинацией </Link> </li>
+        <li id="compare-tab"> <Link href="compare.html"> Сравнение товаров <span className="badge" /> </Link> </li>
+        <li><Link href="cart.html"> Корзина <span className="badge" id="total-cart-count" /> </Link> </li>
+        <li> <Link href="order.html"> Оформление заказа </Link> </li>
       </ul>
-      <br />
       <div
         className="col-md-12"
         id="filters"
@@ -224,51 +163,5 @@
         />
       </ul>
     </div>
-    <script
-      dangerouslySetInnerHTML={{
-        __html: '        <% _.each(goods, function(item) { %>        <li class="small-good-item row">            <div class="col-md-2">                <img class="small-good-item__img" src="img/goods/<%= item.photo %>" />            </div>            <div class="col-md-10">                <div class="small-good-item__id">Артикул <%= item.good_id %></div>                <div class="small-good-item__name"><%- item.good %> (рейтинг <%= item.rating %>)</div>                <div class="small-good-item__brand">Бренд: <%- item.brand %></div>                <div class="small-good-item__price"><%= item.price %> руб.</div>                <button                    class="small-good-item__btn-add btn btn-info btn-sm js-add-to-cart"                    data-id="<%= item.good_id %>"                    data-name="<%- item.good %>"                    data-price="<%= item.price %>"                >Добавить в корзину</button>                <button                    class="btn btn-link btn-sm js-add-to-compare"                    data-id="<%= item.good_id %>"                    data-category-id="<%= item.category_id %>"                >Добавить к сравнению</button>            </div>        </li>        <% }); %>    '
-      }}
-      id="goods-template"
-      type="text/template"
-    />
-    <script
-      dangerouslySetInnerHTML={{
-        __html: '        <% _.each(brands, function(item) { %>        <div class="checkbox"><label><input type="checkbox" name="brands[]" value="<%= item.id %>"> <%= item.brand %></label></div>        <% }); %>    '
-      }}
-      id="brands-template"
-      type="text/template"
-    />
-    <script
-      src="js/vendor/jquery.min.js"
-      type="text/javascript"
-    />
-    <script
-      src="js/vendor/jquery.cookie.js"
-      type="text/javascript"
-    />
-    <script
-      src="components/jquery-ui/jquery-ui.min.js"
-      type="text/javascript"
-    />
-    <script
-      src="js/vendor/underscore.min.js"
-      type="text/javascript"
-    />
-    <script
-      src="js/modules/catalogDB.js"
-      type="text/javascript"
-    />
-    <script
-      src="js/modules/cart.js"
-      type="text/javascript"
-    />
-    <script
-      src="js/modules/compare.js"
-      type="text/javascript"
-    />
-    <script
-      src="js/modules/main.js"
-      type="text/javascript"
-    />
-  </body>
-</html>
+  );
+}
